@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/marginBase"
+    android:paddingRight="@dimen/marginBase">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/marginBase">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvdtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/marginBase"
+                        android:paddingTop="@dimen/marginBase"
+                        android:text="Tran Manh Hung"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/textLarge" />
+
+
+                    <TextView
+                        android:id="@+id/tvdtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/marginBase"
+                        android:paddingTop="@dimen/marginBase"
+                        android:text="addtress"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/textMedium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/marginBase"
+                        android:paddingTop="@dimen/marginBase">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Distance : "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textMedium" />
+
+                        <TextView
+
+                            android:id="@+id/tvdtDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="distance"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" km"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/marginBase"
+                        android:paddingTop="@dimen/marginBase">
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Phone Numbers: "-->
+                        <!--android:textColor="@color/black" />-->
+
+
+                        <TextView
+                            android:id="@+id/tvdtPhoneNumbers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/marginBase"
+                            android:paddingTop="@dimen/marginBase"
+                            android:text="formatted_phone_number"
+                            android:textColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tvdtWebsite"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/marginBasex6"
+                        android:text="Website"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/btnDirections"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/marginBasex10"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="Direction" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpdt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvAutoRecycler"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/marginBasex10"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/marginBasex2"
+    android:paddingLeft="@dimen/marginBasex3"
+    android:paddingRight="@dimen/marginBasex3"
+    android:paddingTop="@dimen/marginBasex2"
+    android:textColor="@color/white"
+    android:textSize="@dimen/textMedium" />

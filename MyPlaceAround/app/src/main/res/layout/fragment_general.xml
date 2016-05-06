@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/nodata"
+        android:textColor="#8e7074"
+        android:textSize="@dimen/textExtraLarge"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_bg_" />
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:id="@+id/tvTypeChoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccffffff"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/marginBasex2"
+            android:text="List Place"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textExtraLarge"
+            android:textStyle="italic" />
+
+
+        <ListView
+            android:id="@+id/lvPlace"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:dividerHeight="@dimen/marginBase"></ListView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

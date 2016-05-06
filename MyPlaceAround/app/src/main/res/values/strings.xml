@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyPlaceAround</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="name"><b>Name Place : </b> </string>
+    <string name="address"><b>Address : </b></string>
+    <string name="distance"><b>Distance : </b></string>
+    <string name="nodata"><b>NO DATA\nPLEASE SELECT ITEM</b></string>
+
+    <string name="airport">Airport</string>
+    <string name="atm">Atm</string>
+    <string name="bank">Bank</string>
+    <string name="bar">Bar</string>
+
+    <string name="church">Church</string>
+    <string name="coffee">Coffee</string>
+    <string name="dentist">Dentist</string>
+    <string name="fooddrink">Food and Drink</string>
+    <string name="hospital">Hospital</string>
+    <string name="police">Police</string>
+    <string name="school">School</string>
+    <string name="store">Store</string>
+
+    <string name="park">park</string>
+    <string name="clothing_store">clothing_store</string>
+    <string name="lodging">lodging</string>
+    <string name="parking">parking</string>
+    <string name="spa">spa</string>
+    <string name="shopping">shopping</string>
+    <string name="taxi_stand">taxi_stand</string>
+    <string name="laundry">laundry</string>
+    <string name="car"><b>car</b></string>
+    <string name="bicycling"><b>bicycling</b></string>
+    <string name="walking"><b>walking</b></string>
+    <string name="bus"><b>bus</b></string>
+
+</resources>

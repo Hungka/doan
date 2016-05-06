@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:paddingLeft="@dimen/marginBasex2"
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/marginBasex10"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Search"
+            android:singleLine="true"
+            android:textSize="@dimen/textMedium"
+            android:textColor="@color/black">
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <ImageView
+            android:id="@+id/imgClear"
+            android:layout_width="@dimen/marginBasex10"
+            android:layout_height="@dimen/marginBasex5"
+            android:layout_gravity="end|center"
+            android:src="@drawable/ic_close" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Cancel" />
+
+
+</LinearLayout>

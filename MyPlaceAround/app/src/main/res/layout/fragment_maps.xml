@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/marginBasex10"
+            android:background="#ccffffff"
+            android:scrollbars="none" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMapDetailsDirections"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginBasex10"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/marginBasex4"
+        android:background="#7fffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMapDetails"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Xem Chi Tiết"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textLarge" />
+
+        <TextView
+            android:id="@+id/tvMapDirections"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Xem Chỉ Đường"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textLarge" />
+
+    </LinearLayout>
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:src="@android:drawable/ic_menu_more"-->
+    <!--app:elevation="6dp"-->
+    <!--app:pressedTranslationZ="12dp" />-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/frtAuto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#ccffffff">-->
+
+    <!--<AutoCompleteTextView-->
+    <!--android:id="@+id/autoCompleteTextView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Please enter your place"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="@color/black">-->
+
+    <!--<requestFocus />-->
+    <!--</AutoCompleteTextView>-->
+
+    <!--</FrameLayout>-->
+
+
+</FrameLayout>

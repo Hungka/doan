@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/marginBase"
+    android:paddingRight="@dimen/marginBase">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginBase">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tvdtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/marginBasex10"
+                android:gravity="center"
+                android:text="Tran Manh Hung"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textLarge" />
+
+
+            <TextView
+                android:id="@+id/tvdtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/marginBasex6"
+                android:text="addtress"
+                android:textColor="@color/red"
+                android:textSize="@dimen/textMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance : "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textMedium" />
+
+                <TextView
+                    android:id="@+id/tvdtDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/marginBasex6"
+                    android:text="distance"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" km"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Phone Numbers: "-->
+                <!--android:textColor="@color/black" />-->
+
+
+                <TextView
+                    android:id="@+id/tvdtPhoneNumbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/marginBasex6"
+                    android:text="formatted_phone_number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvdtWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/marginBasex6"
+                android:text="Website"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btnDirections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="Direction" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnViewMap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xem Ban Do" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
